@@ -114,7 +114,7 @@
                             </g>
                         </svg>
                     </div>
-                    <span class="nav-link-text ms-1">Productos</span>
+                    <span class="nav-link-text ms-1">Clientes</span>
                 </a>
             </li>
             <li class="nav-item">
