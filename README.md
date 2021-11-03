@@ -276,24 +276,27 @@ We use GitHub Issues as the official bug tracker for the Soft UI Dashboard. Here
 ### Social Media
 
 ### Creative Tim
-Twitter: <https://twitter.com/CreativeTim?ref=sudl-readme>
+ubuntu 20.0.4
+install docker 
+instal compose
 
-Facebook: <https://www.facebook.com/CreativeTim?ref=sudl-readme>
 
-Dribbble: <https://dribbble.com/creativetim?ref=sudl-readme>
+sudo service docker start
 
-Instagram: <https://www.instagram.com/CreativeTimOfficial?ref=sudl-readme>
+copiar .env.example1 a .env (ojo .env1)
 
-### Updivision:
+docker-compose build app
+docker-compose up -d
+docker-compose ps
+docker-compose exec app ls -l
+docker-compose exec app composer install
+docker-compose exec app php artisan migrate
+docker-compose exec app php artisan key:generate
 
-Twitter: <https://twitter.com/updivision?ref=sudl-readme>
 
-Facebook: <https://www.facebook.com/updivision?ref=sudl-readme>
 
-Linkedin: <https://www.linkedin.com/company/updivision?ref=sudl-readme>
-
-Updivision Blog: <https://updivision.com/blog/?ref=sudl-readme>
-
+docker-compose down
+https://www.digitalocean.com/community/tutorials/how-to-install-and-set-up-laravel-with-docker-compose-on-ubuntu-20-04-es
 ## Credits
 
 - [Creative Tim](https://creative-tim.com/?ref=sudl-readme)
