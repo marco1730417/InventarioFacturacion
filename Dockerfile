@@ -28,6 +28,15 @@ RUN useradd -G www-data,root -u $uid -d /home/$user $user
 RUN mkdir -p /home/$user/.composer && \
     chown -R $user:$user /home/$user
 
+    # Install Node
+RUN apt-get update &&\
+    apt-get install -y --no-install-recommends gnupg &&\
+    curl -sL https://deb.nodesource.com/setup_10.x | bash - &&\
+    apt-get update &&\
+    apt-get install -y --no-install-recommends nodejs &&\
+    npm config set registry https://registry.npm.taobao.org --global &&\
+    npm install --global gulp-cli
+
 # Set working directory
 WORKDIR /var/www
 
